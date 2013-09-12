@@ -15,7 +15,7 @@ It also includes a sane configuration file mechanism with the help of
 
 ## Usage
 1. [Fork this repository.](https://github.com/zuzak/express-skeleton/fork).
-2. Clone the repository to your workspace.
+2. ``git clone`` the repository to your workspace.
 3. Edit the ``package.json`` file by adding a name.
    ```json
    {
