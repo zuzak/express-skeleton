@@ -1,0 +1,22 @@
+{
+    "name":"sandbox",
+    "version": "0.0.1",
+    "private": "true",
+    "dependencies": {
+        "express": "3.2.4",
+        "jade": "0.30.x",
+        "request": "2.27.x",
+        "convict":"0.4.x"
+    },
+    "devDependencies": {
+        "mocha": "1.x.x",
+        "should": "1.2.x",
+        "request": "2.27.x"
+    },
+    "scripts": {
+        "test": "node_modules/.bin/mocha"
+    },
+    "engines": {
+        "node":"0.6 | 0.8 | 0.10 | 0.11"
+    }
+}
