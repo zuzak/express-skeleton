@@ -1,7 +1,7 @@
 ## Express app skeleton
 
 <!-- change this to point to YOUR travis build icon -->
-[![Build Status](https://travis-ci.org/zuzak/node-skeleton.png?branch=master)](https://travis-ci.org/zuzak/node-skeleton)
+[![Build Status](https://travis-ci.org/zuzak/express-skeleton.png?branch=master)](https://travis-ci.org/zuzak/express-skeleton)
 
 **[Click here to fork this repository](https://github.com/zuzak/express-skeleton/fork)**
 
