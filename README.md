@@ -16,7 +16,7 @@ It also includes a sane configuration file mechanism with the help of
 ## Usage
 1. [Fork this repository.](https://github.com/zuzak/express-skeleton/fork).
 2. Clone the repository to your workspace.
-2. Edit the ``package.json`` file by adding a name.
+3. Edit the ``package.json`` file by adding a name.
    ```json
    {
        "name":"sandbox",
@@ -24,9 +24,10 @@ It also includes a sane configuration file mechanism with the help of
        ...etc
    }
    ```
-3. Run ``npm install`` to pull in the dependencies.
-4. Run ``npm start`` to run the web server.
-5. Run ``npm test`` to run the test suite.
-6. Set up automated testing by visiting your
+4. Edit ``LICENSE`` appropriately.
+5. Run ``npm install`` to pull in the dependencies.
+6. Run ``npm start`` to run the web server.
+7. Run ``npm test`` to run the test suite.
+8. Set up automated testing by visiting your
    [travis profile](https://travis-ci.org/profile).
-7. Replace this ``README.md`` with something appropriate to your project.
+9. Replace this ``README.md`` with something appropriate to your project.
