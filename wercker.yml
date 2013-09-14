@@ -1,12 +1,33 @@
-box: wercker/nodejs
+box: wercker/ubuntu12.04-nodejs0.10@0.0.4
 build:
-    steps:
+    steps: - script:
+            name: "check node versions"
+            code: |
+                node -v
+                npm -v
+
         - script:
-            name: "install application"
+            name: "install dependencies"
             code: "npm install"
+
+        - script: 
+            name: "install further dependencies"
+            code: |
+                sudo npm install -g istanbul mocha
+
         - script:
-            name: "start application"
-            code: |-
-                
-                  npm start &
-                  npm test
+            name: "run and test application"
+            code: |
+                npm start &
+                echo "Server started"
+                npm test
+        - script:
+            name: "calculate test efficacy"
+            code: |
+                istanbul cover mocha --report lcovonly -- -R spec
+        - script:
+            name: "publish code coverage"
+            code: |
+                export COVERALLS_GIT_COMMIT = $WERCKER_GIT_COMMIT
+                cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+                rm -rf ./coverage
