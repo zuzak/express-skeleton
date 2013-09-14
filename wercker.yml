@@ -1,6 +1,7 @@
 box: wercker/ubuntu12.04-nodejs0.10@0.0.4
 build:
-    steps: - script:
+    steps:
+        - script:
             name: "check node versions"
             code: |
                 node -v
@@ -21,10 +22,12 @@ build:
                 npm start &
                 echo "Server started"
                 npm test
+
         - script:
             name: "calculate test efficacy"
             code: |
                 istanbul cover mocha --report lcovonly -- -R spec
+
         - script:
             name: "publish code coverage"
             code: |
