@@ -11,7 +11,7 @@ build:
             name: "install dependencies"
             code: "npm install"
 
-        - script: 
+        - script:
             name: "install further dependencies"
             code: |
                 sudo npm install -g istanbul mocha
