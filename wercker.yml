@@ -14,7 +14,7 @@ build:
         - script:
             name: "install further dependencies"
             code: |
-                sudo npm install -g istanbul mocha
+                sudo npm install -g istanbul
 
         - script:
             name: "run and test application"
@@ -26,7 +26,7 @@ build:
         - script:
             name: "calculate test efficacy"
             code: |
-                istanbul cover mocha --report lcovonly -- -R spec
+                istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R spec
 
         - script:
             name: "publish code coverage"
