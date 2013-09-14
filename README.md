@@ -2,6 +2,7 @@
 
 <!-- change this to point to YOUR travis build icon -->
 [![Build Status](https://travis-ci.org/zuzak/express-skeleton.png?branch=master)](https://travis-ci.org/zuzak/express-skeleton)
+[![wercker status](https://app.wercker.com/status/4e3e81694284790325f6c5c3de914280/m "wercker status")](https://app.wercker.com/project/bykey/4e3e81694284790325f6c5c3de914280)
 
 **[Click here to fork this repository](https://github.com/zuzak/express-skeleton/fork)**
 
