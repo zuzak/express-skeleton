@@ -6,5 +6,7 @@ build:
             code: "npm install"
         - script:
             name: "start application"
-            code: "npm start &"
-        - npm-test
+            code: |-
+                
+                  npm start &
+                  npm test
