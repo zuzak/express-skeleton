@@ -31,6 +31,6 @@ build:
         - script:
             name: "publish code coverage"
             code: |
-                export COVERALLS_GIT_COMMIT = $WERCKER_GIT_COMMIT
+                export COVERALLS_GIT_COMMIT=$WERCKER_GIT_COMMIT
                 cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
                 rm -rf ./coverage
