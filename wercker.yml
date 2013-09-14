@@ -7,4 +7,4 @@ build:
         - script:
             name: "start application"
             code: "npm start &"
-        - step: npm-test
+        - npm-test
