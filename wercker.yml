@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: zuzak/nodebox 
 build:
     steps:
         - script:
