@@ -1,12 +1,37 @@
+<<<<<<< HEAD
 box: zuzak/nodebox 
 build:
     steps:
         - script:
-            name: "install application"
+            name: "check node versions"
+            code: |
+                node -v
+                npm -v
+
+        - script:
+            name: "install dependencies"
             code: "npm install"
+
         - script:
-            name: "start application"
-            code: "npm start &"
+            name: "install further dependencies"
+            code: |
+                sudo npm install -g istanbul
+
         - script:
-            name: "test application"
-            code: "npm test"
+            name: "run and test application"
+            code: |
+                npm start &
+                echo "Server started"
+                npm test
+
+        - script:
+            name: "calculate test efficacy"
+            code: |
+                istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R spec
+
+        - script:
+            name: "publish code coverage"
+            code: |
+                export COVERALLS_GIT_COMMIT=$WERCKER_GIT_COMMIT
+                cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+                rm -rf ./coverage
