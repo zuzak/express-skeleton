@@ -11,7 +11,7 @@ This is a skeleton for a [node.js](http://nodejs.org) web application, using
 It also includes a sane configuration file mechanism with the help of
 [convict](https://github.com/lloyd/node-convict), and contains a ready-to-extend
 [travis](https://travis-ci.org) test suite utilising
-[mocha](http://visionmedia.github.io/mocha).
+[mocha](http://mochajs.org/).
 
 ## Usage
 1. [Fork this repository.](https://github.com/zuzak/express-skeleton/fork).
