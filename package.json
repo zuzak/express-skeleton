@@ -6,7 +6,7 @@
     "express": "4.16.0",
     "jade": "0.30.x",
     "request": "2.84.0",
-    "convict": "4.3.2",
+    "convict": "6.0.0",
     "snyk": "^1.100.0"
   },
   "devDependencies": {
